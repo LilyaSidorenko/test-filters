@@ -1,0 +1,28 @@
+{{#each site.catalog}}
+
+    <div class="product js-product" data-attr="{{attribute}}">
+        <a href="#" class="product__link">
+            <img
+                    src="{{img}}"
+                    alt="{{name}}" class="product__image"/>
+
+
+        </a>
+
+        <p class="product__title">{{name}}</p>
+
+        <div class="rating-view"><div class="rating-view__bg">
+            <div class="rating-view__count" style="width: {{rating}}%"></div>
+        </div></div>
+        <div class="product__price">
+            <span class="regular">{{price.regular}}</span>
+            <span class="special">{{price.special}}</span>
+        </div>
+
+        <div class="product__variant">
+            {{#each colors}}
+                <a title="{{name}}" class="product__color" style="background: {{code}}"></a>
+            {{/each}}
+        </div>
+    </div>
+{{/each}}

@@ -1,0 +1,47 @@
+.product {
+    font-size: 18px;
+
+
+    width: 30%;
+    //margin-right: 5%;
+    margin-bottom: 36px;
+
+    &.hidden {
+        display: none;
+    }
+    &.active {
+        display: block;
+    }
+
+    &__title {
+        font-family: $font-bold;
+        margin-bottom: 10px;
+    }
+    &__image {
+        max-width: 100%;
+        border: 1px solid $grey_regular;
+
+    }
+    &__link {
+        display: block;
+    }
+    &__price {
+        font-size: 14px;
+        font-family: $font-default;
+
+        .regular {
+            text-decoration: line-through;
+        }
+        .special {
+            color: $red_regular;
+            font-family: $font-bold;
+        }
+    }
+    &__color {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+}
